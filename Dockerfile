@@ -10,4 +10,4 @@ RUN go build -o /ci-cd-go
 
 EXPOSE 3000
 
-CMD ["/belajar-cicd-pemula"]
+CMD ["/ci-cd-go"]
