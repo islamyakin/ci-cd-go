@@ -6,7 +6,7 @@ COPY go.mod ./
 COPY *.go ./
 COPY static ./static
 
-RUN go build -o /belajar-cicd-pemula
+RUN go build -o /ci-cd-go
 
 EXPOSE 3000
 
