@@ -39,10 +39,8 @@ jobs:
     - name: Deploy using ssh
       uses: appleboy/ssh-action@master
       with: 
-        host: ${{ secrets.HOST }}
-	username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.PRIVATE_KEY }}
-	port: 6122
-        script: whoami 
-
-     
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 6122
+          script: whoami 
