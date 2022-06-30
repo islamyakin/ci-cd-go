@@ -35,14 +35,14 @@ jobs:
       with:
           push: true
           tags: nurulyakin/cicd-tes:latest
-        
-  	- name: Deploy using ssh
-	    uses: appleboy/ssh-action@master
-	    with: 
+	  
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with: 
         host: ${{ secrets.HOST }}
-	      username: ${{ secrets.USERNAME }}
+	username: ${{ secrets.USERNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
-	      port: 6122
+	port: 6122
         script: whoami
 
      
