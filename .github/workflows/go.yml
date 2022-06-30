@@ -34,7 +34,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
           push: true
-          tags: nurulyakin/cicd-tes:latest
+          tags: nurulyakin/cicd-tes:v1
 	  
     - name: Deploy using ssh
       uses: appleboy/ssh-action@master
